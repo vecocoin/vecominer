@@ -21,7 +21,7 @@ in veco.conf
 -a ADDRESS, –address ADDRESS           wallet address to receive mined blocks (required)
 -s {0,1}, –ssl {0,1}                   use SSL (1 = HTTPS, 0 = HTTP, default: 0)
 -t THREADS, –threads THREADS           number of mining threads (default: max cores)
--i ITERATIONS, –iterations ITERATIONS  iterations per request (default: auto-calibration)
+-i ITERATIONS, –iterations ITERATIONS  iterations per request (default: auto-calibration for 30s duty cycles)
 ```
 
 ## Examples:
