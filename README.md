@@ -1,4 +1,4 @@
-# vecominer
+# VecoMiner
 A simple solominer for Veco that requires no mining pools.
 
 ## Requirements:
@@ -32,3 +32,8 @@ If you mine on the same PC that you run your node on, the default settings work 
 If you mine on a remote server (e.g. "mynode.com") that uses ssl, a different port, and password + username:
 
 `VecoMiner.exe -a <address> -h mynode.com -u <username> -p <password> -p <port> -s 1`
+
+## Optimization:
+You can get about 10% higher hash rates by running `vecod.exe --disablewallet` instead of the Qt wallet.
+Increasing the number of RPC threads in veco.conf with `rpcthreads = <number of threads>` can also help in some cases.
+In general, mining with vecominer is much more efficient than pool mining e.g. with cpuminer, but it scales less well at high core counts.
